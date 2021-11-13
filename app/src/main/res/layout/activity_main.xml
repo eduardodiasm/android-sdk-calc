@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="512dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="97dp">
+
+        <TextView
+            android:id="@+id/labelNumberOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="First number"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/numberOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/labelNumberTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Second number"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/numberTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/buttonSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sum"
+            android:text="Sum" />
+
+        <Button
+            android:id="@+id/buttonSubtraction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="subtract"
+            android:text="Subtraction" />
+
+        <Button
+            android:id="@+id/buttonMultiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="multiply"
+            android:text="Multiple" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="divide"
+            android:text="Divide" />
+
+        <TextView
+            android:id="@+id/resultLabel"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:text="The result is:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
